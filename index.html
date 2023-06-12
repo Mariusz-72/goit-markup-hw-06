@@ -24,14 +24,14 @@
 <body>
 <header class="container">
     <div class="header-outfield">
-        <div class="menu-navigation">
-            <section>
+            <div class="menu-navigation">
+                <section>
                 <h2 class="logoupper">
                     <a href="index.html">
                     <span class="logo-web">Web</span>
                     <span class="logo-studio">Studio</span></a>
                 </h2>
-            </section>
+                </section>
             <nav>
                 <ul class="main-nav">
                     <li><a class="navi" href="index.html">Agencja</a><div class="current"></div></li>
@@ -39,44 +39,36 @@
                     <li><a class="navi" href="#">Kontakt</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="menu-contact">
+            </div>
+            <div class="menu-contact">
                 <div class="contacts">
-                    
                     <div class="contact-link">
                         <a class="mailadress" href="mailto:info@devstudio.com">
                             <svg class="envelope" width="16" height="12">
                                 <use href="./images/icons.svg#icon-envelope"></use></svg>
                             info@devstudio.com</a>
                     </div>
-                    
-                    
                     <div class="contact-link">
                         <a class="mailadress" href="tel:+48111111111">
                             <svg class="smartphone" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone"></use></svg>
-                                +48 111 111 111</a>
+                            <use href="./images/icons.svg#icon-smartphone"></use></svg>
+                            +48 111 111 111</a>
                     </div>
-                    
                 </div>
-        </div>
-        
+            </div>
     </div>
 </header>
 <main class="container">
+
         <section class="main-block-upper">
-
-
             <div class="container">
                 <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-
                 <button data-modal-open class="button-order" type="button">Zamów usługę</button>
+                
             </div>
-
             
-
-
         </section>
+
         <section class="main-block-middle">
         <div class="container-antenna">
             <ul class="main-block-middle-list">
@@ -374,9 +366,27 @@
                     </li>
                 </ul>
         </div>
+        <div class="newsletter">
+        <p class="newsletter-text">ZAPISZ SIĘ DO NEWSLETTERA</p>
+                <form class="newsletter-field-button">
+                    <label  name="signup_newsletter" autocomplete="on" novalidate>
+                    <input class="signup-newsletter"  type="email" name="e-mail" placeholder="   E-mail"/>
+                    
+                    </label>
+                    <button class="button-signup" type="submit">
+                        <p class="signup-button-text">Zapisz się</p>
+                        <svg class="send-email-icon">
+                        <use href="./images/icons4.svg#icon-paper-plane">
+                        </use>
+                        </svg>
+                    </button>
+                </form>
+
+        </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-                    <div class="modal">
+            <div class="modal">
+                
                     <button class="button-close" data-modal-close><svg width="30" height="30">
                     <line
                     x1="10"  y1="10" x2="21" y2="21"
@@ -388,8 +398,52 @@
                     stroke="rgba(0, 0, 0, 0.8)" stroke-width="2" opacity="0.2"/>
                     </svg> 
                     </button>
+                    
+                <form action="#"  name="12345" method="post">
+                    <div class="modal-title">
+                        <p>Zostaw swoje dane w formularzu poniżej</p>
                     </div>
-            </div>
+                <div class="modal-inputs">
+                    <div class="modal-name">
+                        <label class="label-header" for="name">Imię</label>
+                        <input class="modal-field"  type="text" id="name" />
+                        
+                        
+                        
+                    </div>
+
+                    <div class="modal-phonenumber">
+                        <label class="label-header" for="phonenumber">Telefon</label>
+                        <input class="modal-field" type="number"  id="phonenumber" placeholder="ikona telefonu"/>
+                        
+                    </div>
+
+                    <div class="modal-email">
+                        <label class="label-header" for="email">Email</label>
+                        <input class="modal-field" type="email" name="email" id="email" placeholder="ikona koperty"/>
+                        
+                    </div>
+
+                    <div class="modal-comment">
+                    <label class="label-header" for="comment">Komentarz</label>
+                        <div >
+                            <textarea  class="modal-field-comment" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+                        </div>
+                    
+                    </div>
+                </div>
+                    <div>
+                        <label class="modal-checkbox">
+                            <input type="checkbox" name="statement"   />
+                            <p>Oświadczam iż akceptuję <a class="statement" href="">Regulamin</a> i <a class="statement" href="">Politykę Prywatności</a>.</p>
+                        </label>
+                    </div>
+                <div class="button-send-field">
+                <button class="button-send" type="submit">Wyślij</button>
+                </div>
+                </form>
+            </div>    
+    </div>
     <script src="./js/modal.js"></script>    
 </body>
 </html>

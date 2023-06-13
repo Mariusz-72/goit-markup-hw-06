@@ -374,42 +374,70 @@ left: 50%;
     left: 93%;
     cursor: pointer;
 }
+/*----------------------------------------*/
 
-
-
-
-
-/*
-.modalwindow-1
+.modal-title
 {
-    display:inline-flex;
-    flex-direction: column;
-    position: relative;
-    line-height: 20px;
-    margin-top: 30px;
-    margin-left: 8px;
-    color: var(--dark-gray);
-}*/
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+
 
 .modal-inputs
 {
-   line-height: 20px;
-    margin-top: 30px;
+    line-height: 20px;
+    margin-top: 12px;
     margin-left: 40px;
-    gap: 10px;
-    color: var(--dark-gray); 
+    
+    
 }
 
 .label-header
 {
+    height: 60px;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: var(--light-grey);
     line-height: 14.06px;
+    margin-bottom: 10px;
     
-    margin-bottom: 2px;
-    margin-top: 10px;
 }
+
+
+
+.modal-field
+{
+    width: 408px;
+    height: 40px;
+    left: 40px;
+    margin-top:4px;
+    transition-property:transform, background-color, fill;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-field
+{
+    width:380px;
+    height: 30px;
+    text-indent: 44px;
+}
+
+.modal-field-icon
+{
+    position: relative;
+    top: -68%;
+    left: 5.5%;
+    transform: translate(-50%);
+}
+
+
 
 .button-send
 {
@@ -435,60 +463,30 @@ margin-left: 164px;
 
 
 
-.modal-title
-{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23.44px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: 5px;
-    margin-bottom: 12px;
-}
 
-.modal-name
-{
 
-    position:relative;
-    display: flex;
-    flex-direction: column;
-fill:#000000;
+
+.modal-comment
+{
+    width: 448px;
+    height: 138px;
 }
 
 
-.modal-name::after
-{
-width: 18px;
-height: 18px;
-top: 29px;
-left: 12px;
-fill:#000000;
-
-    position:absolute;
-    content:"";
-background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' style='position:absolute;width:0;height:0;overflow:hidden'%3e%3cdefs%3e%3csymbol id='icon-user' viewBox='0 0 32 32'%3e%3cpath d='M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649C7.216 22.637 2 25.97 2 30h28c0-4.03-5.216-7.364-12-7.918z'/%3e%3c/symbol%3e%3c/defs%3e%3c/svg%3e");
-transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-name:focus-within::after,
-.modal-name:hover::after
-{
-    
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' style='position:absolute;width:0;height:0;overflow:hidden'%3e%3cdefs%3e%3csymbol id='icon-user' viewBox='0 0 32 32'%3e%3cpath d='M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649C7.216 22.637 2 25.97 2 30h28c0-4.03-5.216-7.364-12-7.918z'/%3e%3c/symbol%3e%3c/defs%3e%3c/svg%3e");
-}
-
-
-
-.modal-field
+.input-field
 {
     height: 40px;
     width: 448px;
-    line-height: 1;
+    line-height: 14.06px;
     
     border: 1px solid  rgba(33,33,33,0.2);
     border-radius: 4px;
-    stroke: 1px solid rgba(33,33,33,0.2);
+    
+    transition-property:fill, border-color;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 .modal-field-comment
@@ -496,39 +494,46 @@ transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 120px;
     width: 448px;
     resize: none;
+    padding: 12px 16px;
     border: 1px solid  rgba(33,33,33,0.2);
     border-radius: 4px;
-    stroke: 1px solid rgba(33,33,33,0.2);
+    transition-property:border;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-phonenumber
+.modal-field-comment::placeholder
 {
-    display: flex;
-    flex-direction: column;
+    line-height: 14px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
 }
 
-.modal-email
+
+.modal-field-comment:focus-within,
+.modal-field-comment:hover 
 {
-    display: flex;
-    flex-direction: column;
+    border: 1px solid var(--blue)
 
 }
 
-.modal-comment
+.modal-field:hover,
+.modal-field:focus :focus-within,
+.modal-field:active,
+.input-field:hover,
+.input-field:focus :focus-within,
+.input-field:active
 {
-    width: 448px;
-    height: 138px;
-    margin-top: 10px;
-    margin-bottom: 6px;;
+    fill: var(--blue);
+    border-color: var(--blue);
+
+    
 }
 
-.modal-comment-field
-{
-    width: 448px;
-    height: 120px;
-}
 
-.modal-checkbox
+.modal-checkbox1
 {
     display: flex;
     justify-content: center;
@@ -536,8 +541,107 @@ transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--light-grey);
     line-height: 24px;
     margin-top: 10px;
-    gap: 8px;
+    padding-left: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
 }
+
+.statement1
+{
+    cursor: not-allowed;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+/* schowanie standardowego checkboxa */
+.modal-checkbox1 input
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+
+/* Create a custom checkbox */
+.checkbox-field {
+  position: relative;
+  top: 5px;
+  left: -9px;
+  height: 15px;
+  width: 16px;
+  border-radius: 2px;
+  background-color: var(--white);
+  background-repeat: none;
+    background-position: 50% 50%;
+    box-shadow: 0 0 0 0.1em var(--light-grey);
+    cursor: pointer;
+}
+
+/* On mouse-over, add a grey background color */
+.modal-checkbox1:hover input ~ .checkbox-field 
+{
+  background-color: var(--lines-color);
+  box-shadow: 0 0 0 0.1em var(--blue);
+}
+
+/* When the checkbox is checked, add a blue background */
+.modal-checkbox1 input:checked ~ .checkbox-field {
+  background-color: var(--blue);
+  box-shadow: 0 0 0 0.1em var(--blue);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-field:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.modal-checkbox1 input:checked ~ .checkbox-field:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.modal-checkbox1 .checkbox-field:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+/* Checked 
+
+.checkbox:checked + .checkbox-field {
+  background-color: red;
+  
+  background-image: url("../images/icons4.svg#icon-checkbox-checked");
+}
+*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -950,7 +1054,7 @@ footer
     margin-bottom: 20px;
 }
 
-.signup-newsletter
+.email-newsletter
 {
     width: 358px;
     height: 50px;
@@ -958,12 +1062,18 @@ footer
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.03em;
+    padding-left: 40px;
+    color: var(--white);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: var(--background-grey);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     stroke: 1px solid rgba(255,255,255,0.3);
 }
+
+
+
+
 
 .button-signup
 {

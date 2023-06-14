@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    
 }
 
 :root 
@@ -26,12 +25,10 @@ body
 {
     font-family: "roboto", sans-serif;
     font-size: 14px;
-
-
-    
 }
 
-section {
+section 
+{
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -42,12 +39,12 @@ a
     text-decoration: none;
     color: var(--light-grey);
 }
+
 a:hover,
 a:focus,
 a:active 
 {
     color: var(--blue);
-    
 }
 
 img {
@@ -60,8 +57,6 @@ h1,h2,h3,h4,p
 {
     margin: 0px;
 }
-
-
 
                     /* general classes general classes  general classes */
 
@@ -178,9 +173,9 @@ h2
     height:12px;
     margin-right: 10px;
     fill: var(--light-grey);
-transition-property: fill, color;
-transition-duration: 0.25s;
-transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, color;
+    transition-duration: 0.25s;
+    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -191,9 +186,9 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 10px;
     margin-bottom: -3px;
     fill: var(--light-grey);
-transition-property: fill, color;
-transition-duration: 0.25s;
-transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, color;
+    transition-duration: 0.25s;
+    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -201,9 +196,9 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 {
     height: 16px;
     color: var(--light-grey);
-transition-property: fill, color;
-transition-duration: 0.25s;
-transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, color;
+    transition-duration: 0.25s;
+    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current
@@ -260,7 +255,6 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     
 }
-
 
                         /* main part  upper*/
                         /* main part  upper*/
@@ -338,7 +332,6 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
                             /* okno modalne   */
                             /* okno modalne   */
                             /* okno modalne   */   
@@ -387,15 +380,11 @@ left: 50%;
     margin-bottom: 12px;
 }
 
-
-
 .modal-inputs
 {
     line-height: 20px;
     margin-top: 12px;
     margin-left: 40px;
-    
-    
 }
 
 .label-header
@@ -408,8 +397,6 @@ left: 50%;
     margin-bottom: 10px;
     
 }
-
-
 
 .modal-field
 {
@@ -437,13 +424,10 @@ left: 50%;
     transform: translate(-50%);
 }
 
-
-
 .button-send
 {
     cursor: pointer;
     background-color: var(--blue);
-    
     color: var(--white);
     font-weight: 700;
     font-size: 16px;
@@ -452,26 +436,19 @@ left: 50%;
     text-align: center;
     width: 200px;
     height: 50px;
-margin-top: 30px;
-margin-left: 164px;
+    margin-top: 30px;
+    margin-left: 164px;
     border: none;
     border-radius: 4px;
     padding: 10px 42px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
-
-
-
-
-
 
 .modal-comment
 {
     width: 448px;
     height: 138px;
 }
-
 
 .input-field
 {
@@ -486,8 +463,6 @@ margin-left: 164px;
     transition-duration: 0.25s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .modal-field-comment
 {
@@ -508,28 +483,24 @@ margin-left: 164px;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-
 }
 
-
 .modal-field-comment:focus-within,
-.modal-field-comment:hover 
+.modal-field-comment:hover,
+.modal-field-comment:active 
 {
     border: 1px solid var(--blue)
-
 }
 
 .modal-field:hover,
-.modal-field:focus :focus-within,
+.modal-field:focus-within,
 .modal-field:active,
 .input-field:hover,
-.input-field:focus :focus-within,
+.input-field:focus-within,
 .input-field:active
 {
     fill: var(--blue);
     border-color: var(--blue);
-
-    
 }
 
 
@@ -546,7 +517,6 @@ margin-left: 164px;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    
 }
 
 .statement1
@@ -557,6 +527,7 @@ margin-left: 164px;
 }
 
 /* schowanie standardowego checkboxa */
+
 .modal-checkbox1 input
 {
     position: absolute;
@@ -566,88 +537,64 @@ margin-left: 164px;
     width: 0;
 }
 
+/* utworzenie mojego checkboxa */
 
-
-/* Create a custom checkbox */
 .checkbox-field {
-  position: relative;
-  top: 5px;
-  left: -9px;
-  height: 15px;
-  width: 16px;
-  border-radius: 2px;
-  background-color: var(--white);
-  background-repeat: none;
+    position: relative;
+    top: 5px;
+    left: -9px;
+    height: 15px;
+    width: 16px;
+    border-radius: 2px;
+    background-color: var(--white);
+    background-repeat: none;
     background-position: 50% 50%;
     box-shadow: 0 0 0 0.1em var(--light-grey);
     cursor: pointer;
 }
 
-/* On mouse-over, add a grey background color */
+/* najazd kursora dodaje szare tło  - można zmienić na  życzenie sprawdzającego... */
+
 .modal-checkbox1:hover input ~ .checkbox-field 
 {
-  background-color: var(--lines-color);
-  box-shadow: 0 0 0 0.1em var(--blue);
+    background-color: var(--lines-color);
+    box-shadow: 0 0 0 0.1em var(--blue);
 }
 
-/* When the checkbox is checked, add a blue background */
+/* jak checkbox jest zaznaczony dodaje niebieskie tło */
+
 .modal-checkbox1 input:checked ~ .checkbox-field {
-  background-color: var(--blue);
-  box-shadow: 0 0 0 0.1em var(--blue);
+    background-color: var(--blue);
+    box-shadow: 0 0 0 0.1em var(--blue);
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+/* utworzenie wskaźnika pola checbox (ukryty jeśli nie zaznaczone) */
+
 .checkbox-field:after {
-  content: "";
-  position: absolute;
-  display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
-/* Show the checkmark when checked */
+/* pokazanie wskaźnika pola checkbox jeśli zaznaczone pole */
+
 .modal-checkbox1 input:checked ~ .checkbox-field:after {
-  display: block;
+    display: block;
 }
 
-/* Style the checkmark/indicator */
+/* ostylowanie wskaźnika pola checbox-zaznaczone */
+
 .modal-checkbox1 .checkbox-field:after {
-  left: 5px;
-  top: 1px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
-
-
-
-
-/* Checked 
-
-.checkbox:checked + .checkbox-field {
-  background-color: red;
-  
-  background-image: url("../images/icons4.svg#icon-checkbox-checked");
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                         /* main part  middle*/
                         /* main part  middle*/
@@ -830,7 +777,6 @@ margin-left: 164px;
     width:44px;
     height:44px;
     padding: 12px;
-    
     cursor: pointer;
     transition-property:transform, background-color, fill;
     transition-duration: 0.25s;
@@ -856,7 +802,6 @@ margin-left: 164px;
     background-color: var(--blue);
 }
 
-
                         /* main part  our team*/
                         /* main part  our team*/
                         /* main part  our team*/
@@ -875,8 +820,6 @@ margin-left: 164px;
     list-style: none;
     gap: 30px;
     justify-content: center;
-    
-    
 }
 
 .main-block-our-customers-item
@@ -902,15 +845,12 @@ margin-left: 164px;
 {
     fill: var(--blue); 
     border-color: var(--blue);
-    
 }
 
 .group
 {
     height: 60px;
     width: 106px;
-    
-    
 }
 
                         /* footer*/
@@ -1071,10 +1011,6 @@ footer
     stroke: 1px solid rgba(255,255,255,0.3);
 }
 
-
-
-
-
 .button-signup
 {
     display: flex;
@@ -1088,7 +1024,6 @@ footer
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
 .newsletter-field-button
@@ -1103,7 +1038,6 @@ footer
     height: 24px;
     fill: var(--white);
     margin-left: 24px;
-    
 }
 
 .signup-button-text
@@ -1122,9 +1056,6 @@ footer
     text-decoration: underline;
     color: var(--blue);
 }
-
-
-
 
                         /* portfolio styles */
                         /* portfolio styles */
@@ -1169,8 +1100,6 @@ footer
     border: none;
     border-radius: 4px;
     padding: 7px 28px;
-    
-    
 }
 
 .porfolio-card-item
@@ -1181,7 +1110,6 @@ footer
     width: 370px ; 
     margin-bottom: 30px;          
     list-style-type: none; 
-    
 }
 
 
@@ -1198,7 +1126,7 @@ footer
 
 .text-on-picture
 {
-position: absolute;  
+    position: absolute;  
     bottom:0;
     right:0;  
     height:297px;
@@ -1260,7 +1188,6 @@ position: absolute;
     background-color: var(--white);
     border:1px solid var(--vanila);
     border-top: 0px;
-    
 }
 
 .project-title
